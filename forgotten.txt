@@ -1,0 +1,274 @@
+<html>
+<head>
+<style>
+body {background-color:#f0f2f5; overflow-y:scroll; font-family: Arial, Helvetica, Sans-serif;}
+.navbar {
+margin-top: -0.5%;
+background-color: #fff;
+padding:1% 1%;
+width: 100%;
+box-shadow: 4px 1px 4px 4px rgba(0,0,0,0.2);
+}
+
+.navbar p {
+position: relative;
+color:#1877f2;
+font-size:25px;
+font-family: Verdana, Helvetica;
+letter-spacing: -1.1px;
+display: block;
+margin-top:-2px; 
+margin-left:-5px;
+text-align: left;
+cursor: pointer;
+}
+
+.login {
+position: relative;
+top: 5px;
+margin-left:67%;
+margin-top:-3.5%;
+}
+
+.navbar .login input {
+border:0.3px solid lightgrey;
+outline: none;
+padding: 1.4%;
+width:29%;
+margin-left:9px;
+font-size: 15px;
+border-radius: 5px 5px 5px 5px;
+margin-top:5px;
+margin-bottom: 0px;
+}
+.navbar .login input:focus {
+border:0.3px solid #1877f2;
+border-color:#1877f2;
+} 
+.navbar .login button {
+border:none;
+outline:none;
+font-size: 15px;
+color:white;
+background-color: #1877f2;
+padding:10px 9.5px;
+border-radius:6px 6px 6px 6px;
+cursor: pointer;
+}
+.navbar .login button:hover {background-color: #156ADA;}
+
+.navbar .login a {
+text-decoration: none;
+margin-left: 3px;
+color: #1877f2;
+font-size: 15px;
+}
+.navbar .login a:hover { text-decoration: underline;}
+
+.container {
+overflow: hidden;
+background-color: #fff;
+margin:4.5% auto;
+padding: 18px 20px;
+width: 24.2%;
+height:auto;
+border-radius: 9px 9px 9px 9px;
+box-shadow:0px 2px 5px 2px rgba(0,0,0,0.2);
+}
+.container .title p {
+font-size: 20px;
+margin: 1%;
+}
+.container .title hr {
+opacity:0.4; 
+width:110%;
+overflow: hidden;
+position: relative;
+margin-left:-5%;
+}
+
+.container .content p {font-size: 17.2px;}
+
+.container .content input {
+border: 1.5px solid lightgrey;
+border-radius: 5px 5px 5px 5px;
+padding: 13px;
+font-size: 17.3px;
+width: 90%;
+color: black;
+}
+
+.container .content hr {
+opacity:0.4;
+margin-left: -5%;
+width:110%;
+}
+.container .content input ::placeholder:focus {
+color:#ccc;
+}
+
+.Cancel a{
+border: none;
+outline: none;
+background-color: #e4e6eb;
+font-size: 15px;
+padding: 10px;
+width: 16%;
+text-align: center;
+float:left;
+left: 56%;
+color: #555;
+cursor: pointer;
+border-radius: 7px 7px 7px 7px;
+margin-top: 6px;
+position:relative;
+text-decoration: none;
+}
+
+.Search button{
+position: relative;
+font-size: 15px;
+outline: none;
+border: none;
+background-color: #1877f2;
+padding: 10px;
+width: 21%;
+text-align: center;
+float: right;
+color: white;
+cursor: pointer;
+border-radius: 7px 7px 7px 7px;
+margin-top: 6px;
+}
+
+.Search button:hover {
+background-color: #156ADA;
+}
+
+.language {
+position: relative;
+background-color: #fff;
+padding:2%;
+text-align: center;
+top: 0%;
+height: 32%;
+padding-bottom: 3.8%;
+
+}
+.language a {
+position: relative;
+top:30%;
+padding: 5px;
+text-decoration: none;
+color: grey;
+margin:3px;
+font-size: 12px;
+font-family: Arial, Helvetica, Sans-serif;
+}
+
+.language p {font-size: 12px; text-align: center; margin-right: 49%; opacity: 0.8; margin-top: 5%;}
+
+.language a:hover {
+text-decoration: underline grey;
+}
+
+.language hr { width: 52.5%; margin-bottom: -8px;position: relative;
+top:30%;opacity: 0.8;}
+.language_ {margin-right:7.4%;position: relative;
+top:30%;}
+
+.language .H {margin-right:51.2%;margin-top:2px;position: relative;
+top:30%;}
+</style>
+</head>
+<body>
+<div class = "navbar">
+
+<p><b>facebook</b></p>
+
+<div class = "login">
+<input type = "email" name = "email" placeholder = "Email or phone" required></input>
+<input type = "password" name = "pswd" placeholder = "Password" required></input>
+<button class = "button"><b>Log In</b></button>
+<a href = "Log in to Facebook.html">Forgotten account?</a>
+
+</div>
+</div>
+
+<div class = "container">
+<div class = "title">
+<p><b>Find Your Account</b></p>
+<hr>
+</div>
+<div class = "content">
+<p>Please enter your email address or mobile number to search for your account.</p>
+<input type = "text" name = "email" placeholder = "Mobile number" required>
+<br>
+<br>
+<hr>
+<div class = "Cancel">
+<a href = "Log in to Facebook.html"><b>Cancel</b></a>
+</div>
+<div class = "Search">
+<button class = "button"><b>Search</b></button>
+</div>
+</div>
+</div>
+<div class = "language">
+<div class = "language_">
+<a href = "#">English(UK)</a>
+<a href = "#">Bahasa Melayu</a>
+<a href = "#">中文（简体）</a>
+<a href = "#">Bahasa Indonesia</a>
+<a href = "#">Vietnamese</a>
+<a href = "#">Thai</a>
+<a href = "#">Arabic</a>
+<a href = "#">Spanish</a>
+<a href = "#">Portuguese</a>
+<a href = "#">France</a>
+<a href = "#">Deutsch</a>
+</div>
+<hr>
+<br>
+<a href = "#">Sign up</a>
+<a href = "#">Log in</a>
+<a href = "#">Messenger</a>
+<a href = "#">Facebook Lite</a>
+<a href = "#">Watch</a>
+<a href = "#">Places</a>
+<a href = "#">Games</a>
+<a href = "#">Marketplace</a>
+<a href = "#">Facebook Pay</a>
+<a href = "#">Jobs</a>
+<a href = "#">Oculus</a>
+<a href = "#">Portal</a>
+<a href = "#">Instagram</a>
+<a href = "#">Bulletin</a>
+<a href = "#">Local</a>
+<br>
+<a href = "#">Fundraisers</a>
+<a href = "#">Services</a>
+<a href = "#">Voting Information Centre</a>
+<a href = "#">Groups</a>
+<a href = "#">About</a>
+<a href = "#">Create ad</a>
+<a href = "#">Create Page</a>
+<a href = "#">Developers</a>
+<a href = "#">Careers</a>
+<a href = "#">Privacy</a>
+<a href = "#">Cookies</a>
+<a href = "#">AdChoices</a>
+<a href = "#">Terms</a>
+<br>
+<div class = "H">
+<a href = "#">Help</a>
+</div>
+
+<br>
+<br>
+
+<p>Meta © 2021</p>
+
+</div>
+</body>
+</html>

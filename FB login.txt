@@ -1,0 +1,567 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background: #f0f2f5;
+overflow-y: scroll;
+}
+
+.title p {
+font-size: 55px;
+color:#1877f2;
+font-family: Verdana, Helvetica;
+padding: 20px;
+margin:10% auto;
+margin-left:23%;
+letter-spacing: -3px;
+position:relative;
+}
+
+.login_form {
+position: absolute;
+background-color: #fff;
+width:19%;
+margin-left: 53%;
+margin-top:-18%;
+border:none;
+border-radius: 10px 10px 10px 10px;
+box-shadow:-1px 3px 5px 4px rgba(0,0,0,0.2);
+padding: 18px;
+}
+
+::placeholder {opacity:0.6; font-size:18px; font-family:Arial, Helvetica, sans-serif;}
+
+.login_form input {
+outline:none;
+border:0.1px solid #ddd;
+padding:16px 18px;
+width:99.5%;
+height:auto;
+border-radius:7px 7px 7px 7px;
+font-size: 18px;
+}
+
+.login_form input:focus {
+border-color: #1877f2;
+border-width: 1px;
+}
+
+.Loginbtn .button {
+border: none;
+outline: none;
+background-color:  #1877f2;
+text-align: center;
+padding: 15px;
+width: 100%;
+color: white;
+font-size: 19px;
+border-radius: 7px 7px 7px 7px;
+}
+
+.Loginbtn .button:hover {
+cursor:pointer;
+background-color:156ADA;
+transition: 0.9s;
+}
+
+.forget { text-align: center;}
+
+.forget a {
+text-decoration: none;
+color:#1877f2;
+font-size:14.5px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.forget a:hover {
+text-decoration: underline blue;
+}
+
+hr {
+opacity: 0.35;
+}
+.create {
+text-align: center;
+}
+.create .button {
+border:none;
+outline: none;
+background-color:#42b72a;
+padding:15px;
+color: white;
+font-size: 16px;
+border-radius: 7px 7px 7px 7px;
+}
+
+.create .button:hover {
+transition: 0.9s;
+background-color:#2CAC0B;
+cursor:pointer;
+}
+
+.description2 {
+position: absolute;
+left:55%;
+top:59%;
+font-size:15px;
+font-family:Arial, Helvetica, sans-serif;
+}
+.description2 a  {
+color:black;
+text-decoration:none;
+}
+
+.description2 a:hover {
+text-decoration: underline;
+}
+
+.description  p {
+margin-left: 24.2%;
+margin-top: -10%;
+font-size: 26px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.language {
+position: relative;
+margin-top:18%;
+background-color: #fff;
+padding:2%;
+text-align: center;
+top: 10;
+height: 16.7%;
+z-index:0;
+}
+.language a {
+padding: 5px;
+text-decoration: none;
+color: grey;
+margin:3px;
+font-size: 12px;
+font-family: Arial, Helvetica, Sans-serif;
+}
+
+.language p {font-size: 12px; text-align: center; margin-right: 49%; opacity: 0.8;}
+
+.language a:hover {
+text-decoration: underline grey;
+}
+
+.language hr { width: 52.5%; float: center; margin-bottom: -8px;}
+.language_ {margin-right:7.4%;}
+
+.language .H {margin-right:51.2%;margin-top:2px;}
+</style>
+</head>
+<body>
+<div class = "title">
+<p><b>facebook</b></p>
+</div>
+
+
+<div class = "login_form">
+<input type = "text" placeholder = "Email address or phone number" name = "username" required></input>
+<br>
+<br>
+<input type = "password" placeholder = "Password" name = "pswd" id="myInput" required></input>
+
+<br>
+<br>
+
+<div class = "Loginbtn">
+<button class = "button"><b>Log in</b></button>
+</div>
+
+<br>
+
+<div class = "forget">
+<a href = "Forgotten Password.html">Forgotten password?</a>
+</div>
+
+<br>
+
+<hr>
+
+<br>
+
+<div class = "create">
+<button class = "button" onclick= "openForm()"><b>Create New Account</b></button>
+</div>
+<div class = "container" id = "myForm">
+<button class = "button" onclick = "closeForm()">&times;</button>
+<h1>Sign up</h1>
+<p>It's quick and easy.</p>
+<hr>
+<input type = "text" placeholder = "First name" id="first" required>
+<input type = "email" id="second" placeholder = "Surname" required></input>
+<input type = "num" id="third" placeholder = "Mobile number or email address" name = "email" required></input>
+<input type = "password" id="fourth" placeholder = "New password" name = "password" required></input>
+<br><br>
+<div class = "select">
+<label for = "Date of birth" style = "font-size: 12px;color: grey;font-family:Arial, Helvetica, Sans-serif;">Date of birth</label><br>
+<select>
+<option value = "1">1</option>
+<option value = "2">2</option>
+<option value = "3">3</option>	
+<option value = "4">4</option>
+<option value = "5">5</option>
+<option value = "6">6</option>
+<option value = "7">7</option>
+<option value = "8">8</option>
+<option value = "9">9</option>
+<option value = "10">10</option>
+<option value = "11">11</option>
+<option value = "12">12</option>
+<option value = "13">13</option>
+<option value = "14">14</option>
+<option value = "15">15</option>
+<option value = "16">16</option>
+<option value = "17">17</option>
+<option value = "18">18</option>
+<option value = "19">19</option>
+<option value = "20">20</option>
+<option value = "21">21</option>
+<option value = "22">22</option>
+<option value = "23">23</option>
+<option value = "24">24</option>
+<option value = "25">25</option>
+<option value = "26">26</option>
+<option value = "27">27</option>
+<option value = "28">28</option>
+<option value = "29">29</option>
+<option value = "30">30</option>
+<option value = "31">31</option>
+</select>
+<select>
+<option value = "Jan">Jan</option>
+<option value = "Feb">Feb</option>
+<option value = "Mar">Mar</option>
+<option value = "Apr">Apr</option>
+<option value = "May">May</option>
+<option value = "Jun">Jun</option>
+<option value = "Jul">Jul</option>
+<option value = "Aug">Aug</option>
+<option value = "Sep">Sep</option>
+<option value = "Oct">Oct</option>
+<option value = "Nov">Nov</option>
+<option value = "Decs">Dec</option>
+</select>
+<select>
+<option value = ""> 2021</input>
+<option value = ""> 2020</input>
+<option value = ""> 2019</input>
+<option value = ""> 2018</input>
+<option value = ""> 2017</input>
+<option value = ""> 2016</input>
+<option value = ""> 2015</input>
+<option value = ""> 2014</input>
+<option value = ""> 2013</input>
+<option value = ""> 2012</input>
+<option value = ""> 2011</input>
+<option value = ""> 2010</input>
+<option value = ""> 2009</input>
+<option value = ""> 2008</input>
+<option value = ""> 2007</input>
+<option value = ""> 2006</input>
+<option value = ""> 2005</input>
+<option value = ""> 2004</input>
+<option value = ""> 2003</input>
+<option value = ""> 2002</input>
+<option value = ""> 2001</input>
+<option value = ""> 2000</input>
+<option value = ""> 1999</input>
+<option value = ""> 1998</input>
+<option value = "">1997</input>
+<option value = ""> 1996</input>
+<option value = ""> 1995</input>
+<option value = ""> 1994</input>
+<option value = ""> 1993</input>
+<option value = ""> 1992</input>
+<option value = ""> 1991</input>
+<option value = ""> 1990</input>
+<option value = ""> 1989</input>
+<option value = "">1988</input>
+<option value = ""> 1987</input>
+<option value = ""> 1986</input>
+<option value = ""> 1985</input>
+<option value = ""> 1984</input>
+<option value = ""> 1983</input>
+<<option value = ""> 1982</input>
+<option value = ""> 1981</input>
+<option value = ""> 1980</input>
+<option value = ""> 1979</input>
+<option value = ""> 1978</input>
+<option value = ""> 1977</input>
+<option value = ""> 1976</input>
+<option value = ""> 1975</input>
+<option value = ""> 1974</input>
+<option value = ""> 1973</input>
+<option value = ""> 1972</input>
+<option value = ""> 1971</input>
+<option value = ""> 1970</input>
+<option value = ""> 1969</input>
+<option value = ""> 1968</input>
+<option value = ""> 1967</input>
+<option value = ""> 1966</input>
+<option value = ""> 1965</input>
+<option value = ""> 1964</input>
+<option value = ""> 1963</input>
+<option value = ""> 1962</input>
+<option value = ""> 1961</input>
+<option value = ""> 1960</input>
+<option value = ""> 1959</input>
+<option value = ""> 1958</input>
+<option value = ""> 1957</input>
+<option value = ""> 1956</input>
+<option value = ""> 1955</input>
+<option value = ""> 1954</input>
+<option value = ""> 1953</input>
+<option value = ""> 1952</input>
+<option value = ""> 1951</input>
+<option value = ""> 1950</input>
+<option value = ""> 1949</input>
+<option value = ""> 1948</input>
+<option value = ""> 1947</input>
+<option value = ""> 1946</input>
+<option value = ""> 1945</input>
+<option value = ""> 1944</input>
+<option value = ""> 1943</input>
+<option value = ""> 1942</input>
+<option value = ""> 1941</input>
+<option value = ""> 1940</input>
+<option value ="" > 1939</input>
+<option value = ""> 1938</input>
+<option value = ""> 1937</input>
+<option value = ""> 1936</input>
+<option value = ""> 1935</input>
+<option value = ""> 1934</input>
+<option value = ""> 1933</input>
+<option value = ""> 1932</input>
+<option value = ""> 1931</input>
+<option value = ""> 1930</input>
+<option value = ""> 1929</input>
+<option value = ""> 1928</input>
+<option value = ""> 1927</input>
+<option value ="" > 1926</input>
+<option value = ""> 1925</input>
+<option value ="" > 1924</input>
+<option value ="" > 1923</input>
+<option value ="" > 1922</input>
+<option value ="" > 1921</input>
+<option value = ""> 1920</input>
+<option value = ""> 1919</input>
+<option value = ""> 1918</input>
+<option value ="" > 1917</input>
+<option value ="" > 1916</option>
+<option value ="" > 1915</option>
+<option value ="" > 1914</option>
+<option value ="" > 1913</option>
+<option value ="" > 1912</option>
+<option value = ""> 1911</option>
+<option value = ""> 1910</option>
+<option value = ""> 1909</option>
+<option value = ""> 1908</option>
+<option value = ""> 1907</option>
+<option value = ""> 1906</option>
+<option value = ""> 1905</option>
+
+</select>
+</div>
+<br>
+<div class = "descript">
+<p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy You</p>
+<p>may receive SMS notifications from us and can opt out at any time.</p>
+<a href = "#"><b>Sign up</b></a>
+</div>
+</div>
+<script>
+function openForm() {
+	document.getElementById("myForm").style.display = "block";
+
+}
+function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+}
+</script>
+</div>
+</div>
+<style>
+.descript p {
+font-size: 10.5px;
+}
+.descript a {
+position: relative;
+left: 28%;
+text-decoration: none;
+text-align: center;
+float: center;
+font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+background-color:#42b72a;
+padding: 11px 40px; 
+color: white;
+border-radius: 7px;
+margin: 15% auto;
+}
+.container .button {
+border:none;
+outline: none;
+position: relative;
+margin-left: 92%;
+font-size: 40px;
+color: #555;
+background-color: white;
+cursor: pointer;
+padding: 5px;
+}
+.container .select select {
+border-radius: 5px;
+border-radius: 0.5px solid grey;
+width: 30%;
+padding: 7px;
+font-size: 15px;
+margin-left: 3px;
+margin: 4px;
+}
+.container .Gender label {font-size: 15px; color: grey;}
+.container .Gender .Female input {position:relative;}
+.container .Gender input#Male {position: relative;}
+.container .Gender input#Custom {position: relative;}
+text-align: left;
+border-radius: 5px;
+border:0.5px solid lightgrey;
+width:28%;
+padding: 8px;
+font-size: 15px;
+}
+.container .button {
+position: relative;
+margin-left: 94%;
+border: none;
+outline: none;
+background-color: white;
+font-size: 35px;
+}
+.container input::placeholder {font-size: 15px;padding-left: 5px;}
+.container input {background-color: #f5f6f7;}
+
+.container input#first {
+position: relative;
+top: -15px;
+margin-top: -10px;
+padding: 10px 1px;
+width: 48%;
+margin: 0.5px;
+padding-left: 7px;
+}
+.container input#second {
+position: relative;
+top: -15px;
+margin-top: -10px;
+padding: 10px 1px;
+padding-left: 7px;
+width: 48%;
+margin: 0.5px;
+}
+.container input#third {
+position: relative;
+top: -7px;
+padding: 10px 1px;
+margin: 0.5px;
+padding-left: 7px;
+}
+.container input#fourth {
+position: relative;
+padding: 10px 1px;
+margin: 0.5px;
+padding-left: 7px;
+}
+.container {
+display: none;
+position: absolute;
+background-color: #ffffff;
+width:400px;
+height: auto;
+padding: 10px;
+right: 66%;
+top: 10%;
+box-shadow: -2px 4px 8px 2px rgb(0,0,0,0.2);
+z-index:1;
+border-radius: 7px;
+}
+.container h1 {
+font-family: Arial, Helvetiva, Sans-serif;
+margin-top: -40px;
+margin-left: 3px;
+}
+.container p {position: relative; opacity: 0.8; top: -18px; margin-left: 3px; font-family: Arial, Helvetica, Sasn-serif;}
+.container hr { text-align: center; width: 104.8%; margin-left: -11px; position: relative; top:-20px;}
+</style>
+<div class = "description2">
+<a href = "#"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
+</div>
+
+<div class = "description">
+<p>Facebook helps you connect and share<br> with the people in your life.</p>
+</div>
+
+<div class = "language" id ="language">
+<div class = "language_" id="language">
+<a href = "#">English(UK)</a>
+<a href = "#">Bahasa Melayu</a>
+<a href = "#">中文（简体）</a>
+<a href = "#">Bahasa Indonesia</a>
+<a href = "#">Vietnamese</a>
+<a href = "#">Thai</a>
+<a href = "#">Arabic</a>
+<a href = "#">Spanish</a>
+<a href = "#">Portuguese</a>
+<a href = "#">France</a>
+<a href = "#">Deutsch</a>
+</div>
+<hr>
+<br>
+<a href = "#">Sign up</a>
+<a href = "#">Log in</a>
+<a href = "#">Messenger</a>
+<a href = "#">Facebook Lite</a>
+<a href = "#">Watch</a>
+<a href = "#">Places</a>
+<a href = "#">Games</a>
+<a href = "#">Marketplace</a>
+<a href = "#">Facebook Pay</a>
+<a href = "#">Jobs</a>
+<a href = "#">Oculus</a>
+<a href = "#">Portal</a>
+<a href = "#">Instagram</a>
+<a href = "#">Bulletin</a>
+<a href = "#">Local</a>
+<br>
+<a href = "#">Fundraisers</a>
+<a href = "#">Services</a>
+<a href = "#">Voting Information Centre</a>
+<a href = "#">Groups</a>
+<a href = "#">About</a>
+<a href = "#">Create ad</a>
+<a href = "#">Create Page</a>
+<a href = "#">Developers</a>
+<a href = "#">Careers</a>
+<a href = "#">Privacy</a>
+<a href = "#">Cookies</a>
+<a href = "#">AdChoices</a>
+<a href = "#">Terms</a>
+<br>
+<div class = "H" id="H">
+<a href = "#">Help</a>
+</div>
+
+<br>
+<br>
+
+<p>Meta © 2021</p>
+
+</div>
+
+</body>
+</html>
