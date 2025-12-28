@@ -1,4 +1,2 @@
 # FB-UI-CLONE
-A FB login page that is full of bugs
-Click some blue links and that will bring you to another page.
-Just that !
+A CLONE OF FACEBOOK LOGIN PAGE CREATED BY ME USING HTML, CSS AND JAVASCRIPT.
